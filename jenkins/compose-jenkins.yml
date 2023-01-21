@@ -11,10 +11,10 @@ services:
       LANG: en_US.UTF-8
       LANGUAGE: en_US:en
       LC_ALL: en_US.UTF-8
-      DOCKER_HOST: tcp://docker:2375
+      DOCKER_HOST: tcp://localhost:2375
       DOCKER_CERT_PATH: 
       DOCKER_TLS_VERIFY: 
     volumes: 
-      - /DATA/USB_MOUNT/HD/AppData/Jenkins/jenkins_home:/var/jenkins_home
-      - /DATA/USB_MOUNT/HD/AppData/Jenkins/.m2:/var/jenkins_home/.m2
+      - /DATA/AppData/Jenkins/jenkins_home:/var/jenkins_home
+      - /DATA/AppData/Jenkins/.m2:/var/jenkins_home/.m2
     container_name: jenkins
