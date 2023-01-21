@@ -2,7 +2,7 @@ version: '3'
 
 services: 
   jenkins:
-    image: jenkins-com-docker:lts-jdk11
+    image: localhost:5000/jenkins-com-docker:lts-jdk11
     restart: always
     ports:
       - "8008:8080"
